@@ -1,0 +1,40 @@
+package InheritanceMatematika;
+
+    public class MatematikaCanggihBanget {
+        void pertambahanTiga (int a, int b, int c){
+            System.out.println(a + " + " + b + " + " + " c " + " = " +(a+b+c));
+        }
+        void pertambahan (int a, int b){
+            System.out.println(a + " + " + b + " = " +(a+b));
+        }
+        void pengurangan (int a, int b){
+            System.out.println(a + " - " + b + " = " +(a-b));
+        }
+        void perkalian (int a, int b){
+            System.out.println(a + " * " + b + " = " +(a*b));
+        }
+        void pembagian (int a, int b){
+            System.out.println(a + " / " + b + " = " +(a/b));
+        }
+        void modulus (int a, int b){
+            System.out.println(a + " % " + b + " = " +(a%b));
+        }
+    
+}
+
+===================================================================================
+
+package InheritanceMatematika;
+
+public class MatematikaCanggihBangetBeraksi {
+    public static void main(String[] args) {
+        MatematikaCanggihBanget MatematikakuTersayang = new MatematikaCanggihBanget();
+        MatematikakuTersayang.pertambahan(10,20);
+        MatematikakuTersayang.pengurangan(30,40);
+        MatematikakuTersayang.perkalian(40,30);
+        MatematikakuTersayang.pembagian(20,10);
+        MatematikakuTersayang.modulus(20, 30);
+        
+    }
+         
+}
