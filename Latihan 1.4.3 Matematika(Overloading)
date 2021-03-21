@@ -1,0 +1,61 @@
+package OverloadingMatematika;
+
+
+public class Matematika {
+    
+    int hasil1, hasil2, hasil3, hasil4;
+    double hasila, hasilb, hasilc, hasild;
+
+        public void Pertambahan(int a, int b) {
+        hasil1 = a + b;
+        System.out.println("Pertambahan = " + a + " + " + b + " = " + hasil1);
+        }
+        public void Pengurangan(int a, int b) {
+        hasil2 = a - b;
+        System.out.println("Pengurangan = " + a + " - " + b + " = " + hasil2);
+        }
+        public void Perkalian(int a, int b) {
+        hasil3 = a * b;
+        System.out.println("Perkalian   = " + a + " + " + b + " = " + hasil3);
+        }
+        public void Pembagian(int a, int b) {
+        hasil4 = a / b;
+        System.out.println("Pembagian   = " + a + " / " + b + " = " + hasil4);
+        System.out.println("=======================================================");
+        }       
+        void Pertambahan(double a, double b, double c) {
+        hasila = a + b + c;
+        System.out.println("Pertambahan = " + a + " + " + b + " + " + c + " = " + hasila);
+        }
+        void Pengurangan(double a, double b, double c) {
+        hasilb = a + b + c;
+        System.out.println("Pengurangan = " + a + " - " + b + " - " + c + " = " + hasilb);
+        }
+        void Perkalian(double a, double b, double c) {
+        hasilc = a * b * c;
+        System.out.println("Perkalian   = " + a + " * " + b + " * " + c + " = " + hasilc);
+        }
+        void Pembagian(double a, double  b, double c) {
+        hasild = a / b /c;
+        System.out.println("Pembagian   = " + a + " / " + b + " / " + c + " = " + hasild);
+        }
+}
+
+=================================================================================================================================================================================
+
+package OverloadingMatematika;
+
+public class MatematikaBeraksi {
+    public static void main(String[] args) {
+        Matematika MatematikakuTersayang = new Matematika();
+
+        MatematikakuTersayang.Pertambahan(12, 28);
+        MatematikakuTersayang.Pengurangan(12, 28);
+        MatematikakuTersayang.Perkalian(12, 28);
+        MatematikakuTersayang.Pembagian(12, 28);
+        MatematikakuTersayang.Pertambahan(12.5, 28.7, 14.2);
+        MatematikakuTersayang.Pengurangan(12.5, 28.7, 14.2);
+        MatematikakuTersayang.Perkalian(12.5, 28.7, 14.2);
+        MatematikakuTersayang.Pembagian(12.5, 28.7, 14.2);
+        }
+}
